@@ -1,0 +1,390 @@
+.hero {
+  position: relative;
+  min-height: 697px;
+  overflow: hidden;
+  background: #f3f6ec;
+  isolation: isolate;
+}
+
+.hero::before {
+  position: absolute;
+  right: 0;
+  bottom: -0.8px;
+  left: 0;
+  z-index: 0;
+  height: 654.42px;
+  background-color: #f3f6ec;
+  background-image: url("/assets/figma/hero-background.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  content: "";
+}
+
+.hero__inner {
+  min-height: 697px;
+  padding-block: 19px 24px;
+}
+
+.hero__content {
+  position: absolute;
+  top: 96.38px;
+  left: 0;
+  z-index: 2;
+  width: 235px;
+  padding: 0;
+}
+
+.hero__title {
+  width: 280px;
+  margin: 0;
+  color: #000;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.02;
+  letter-spacing: 0;
+}
+
+.hero__title span {
+  color: var(--color-green);
+}
+
+.hero__subtitle {
+  margin: 15.125px 0 0 2px;
+  color: #010101;
+  font-size: 14px;
+  line-height: 1.39;
+}
+
+.hero__benefits {
+  position: relative;
+  display: block;
+  width: 208px;
+  height: 288px;
+  margin: 17.547px 0 0 3px;
+  padding: 0;
+  list-style: none;
+}
+
+.hero__phone {
+  position: absolute;
+  top: 309.38px;
+  right: -23px;
+  z-index: 1;
+  width: 176px;
+}
+
+.hero__stores {
+  position: absolute;
+  bottom: 24.62px;
+  left: 3px;
+  z-index: 3;
+}
+
+.capabilities {
+  position: relative;
+  min-height: 584px;
+  overflow: hidden;
+  background: var(--color-section);
+}
+
+.capabilities__inner {
+  min-height: 584px;
+  padding-block: 34px 28px;
+}
+
+.capabilities__visual {
+  position: absolute;
+  top: 0;
+  right: -20px;
+  z-index: 0;
+  width: 390px;
+  height: 223px;
+}
+
+.capabilities__visual img {
+  object-position: top center;
+}
+
+.capabilities__ellipse {
+  position: absolute;
+  top: 188px;
+  left: 291px;
+  z-index: 1;
+  width: 133px;
+  height: 136px;
+  max-width: none;
+  pointer-events: none;
+}
+
+.capabilities__decoration {
+  position: absolute;
+  top: 552px;
+  left: 322px;
+  z-index: 0;
+  width: 74px;
+  height: 39px;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.capabilities__decoration img {
+  position: absolute;
+  top: -24px;
+  left: 0;
+  width: 390px;
+  height: 584.6px;
+  max-width: none;
+}
+
+.capabilities__title {
+  position: relative;
+  z-index: 1;
+  width: 249px;
+  margin-left: 0.81px;
+  font-size: 30px;
+  letter-spacing: -0.3px;
+}
+
+.capabilities__grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 165px));
+  gap: 12px;
+  justify-content: center;
+  margin-top: 87px;
+}
+
+.start {
+  position: relative;
+  height: 412px;
+  overflow: hidden;
+  background: #fbf9f9;
+}
+
+.start__inner {
+  min-height: 412px;
+  padding-block: 30px 24px;
+}
+
+.start__title {
+  position: relative;
+  z-index: 2;
+  width: 264.619px;
+  margin-left: 1px;
+  padding: 8px;
+  font-size: 32px;
+  letter-spacing: 0.32px;
+}
+
+.start__visual {
+  position: absolute;
+  top: 5px;
+  right: -17px;
+  z-index: 0;
+  width: 177px;
+  height: 392px;
+}
+
+.start__visual img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto;
+  height: 100%;
+  max-width: none;
+  object-fit: contain;
+}
+
+.ride {
+  position: relative;
+  height: 839px;
+  overflow: hidden;
+  background: var(--color-page);
+}
+
+.ride::after {
+  position: absolute;
+  right: -48px;
+  bottom: 32px;
+  left: -48px;
+  z-index: 0;
+  height: 153px;
+  background-image: url("/assets/figma/ride-skyline.png");
+  background-position: center bottom;
+  background-size: cover;
+  opacity: 0.7;
+  content: "";
+}
+
+.ride__inner {
+  width: min(calc(100% - 32px), var(--container));
+  min-height: 839px;
+  padding-block: 35px 28px;
+}
+
+.ride__title {
+  font-size: 28px;
+  letter-spacing: 0;
+}
+
+.ride__content {
+  display: grid;
+  gap: 30px;
+  margin-top: 31px;
+}
+
+.ride__device-wrap {
+  position: absolute;
+  top: 415px;
+  left: 50%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  width: 209px;
+  margin: 0 0 0 -104.5px;
+}
+
+.ride__device {
+  width: 209px;
+  height: 388px;
+  object-fit: fill;
+}
+
+.plans {
+  position: relative;
+  height: 404px;
+  overflow: hidden;
+  background: #f8f7f8;
+}
+
+.plans__inner {
+  width: 390px;
+  min-height: 404px;
+  padding: 0;
+}
+
+.plans__visual {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  width: 390px;
+  height: 164px;
+}
+
+.plans__visual img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 390px;
+  height: auto;
+  max-width: none;
+}
+
+.plans__title {
+  position: absolute;
+  top: 36.38px;
+  left: 23px;
+  z-index: 1;
+  width: 199px;
+  padding-block: 8px;
+  background: #f8f8f8;
+  font-size: 30px;
+  letter-spacing: 0;
+}
+
+.action-list {
+  position: absolute;
+  top: 164.38px;
+  left: 19px;
+  z-index: 1;
+  display: grid;
+  gap: 12px;
+  width: 350px;
+  margin: 0;
+}
+
+.support {
+  background: var(--color-page);
+}
+
+.support__inner {
+  width: min(calc(100% - 32px), var(--container));
+  min-height: 301px;
+  padding-block: 24px 36px;
+}
+
+.support__title {
+  font-size: 28px;
+  line-height: 34.987px;
+  letter-spacing: 0;
+}
+
+.support__grid {
+  display: grid;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.faq {
+  background: var(--color-page);
+}
+
+.faq__inner {
+  padding-block: 32px;
+}
+
+.faq__title {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.faq__list {
+  margin-top: 20px;
+  border-top: 1px solid var(--color-line);
+}
+
+.download {
+  position: relative;
+  min-height: 356px;
+  overflow: hidden;
+  background: #f3f6ec;
+}
+
+.download::before {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image: url("/assets/figma/download-background.jpg");
+  background-position: center top;
+  background-size: cover;
+  content: "";
+}
+
+.download__inner {
+  min-height: 356px;
+  padding-block: 31px 24px;
+}
+
+.download__content {
+  width: 272px;
+}
+
+.download__title {
+  margin: 0;
+  color: #000;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1.04;
+  letter-spacing: 0;
+}
+
+.download__content p {
+  width: 252px;
+  margin: 16px 0 0;
+  color: var(--color-muted);
+  font-size: 16px;
+  line-height: 23px;
+}

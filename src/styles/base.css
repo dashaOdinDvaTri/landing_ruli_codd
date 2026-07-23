@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "Moscow Sans";
+  src: url("/assets/fonts/MoscowSans-Light.otf") format("opentype");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Moscow Sans";
+  src: url("/assets/fonts/MoscowSans-Regular.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Moscow Sans";
+  src: url("/assets/fonts/MoscowSans-Medium.otf") format("opentype");
+  font-style: normal;
+  font-weight: 500 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Moscow Sans";
+  src: url("/assets/fonts/MoscowSans-Bold.otf") format("opentype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Moscow Sans";
+  src: url("/assets/fonts/MoscowSans-ExtraBold.otf") format("opentype");
+  font-style: normal;
+  font-weight: 800 900;
+  font-display: swap;
+}
+
+:root {
+  --color-page: #fefdfe;
+  --color-section: #f9f9f9;
+  --color-text: #151515;
+  --color-body: #3c4658;
+  --color-muted: #595959;
+  --color-line: #e7e7e7;
+  --color-green: #68ad45;
+  --color-green-dark: #499f27;
+  --color-green-strong: #34a853;
+  --color-green-soft: #f5f9f5;
+  --color-warning: #fff5da;
+  --color-warning-border: #fee0ba;
+  --color-error-soft: #fde8e7;
+  --shadow-card: 0 0 8px 5px rgb(0 0 0 / 0.04);
+  --shadow-raised: 0 0 6px rgb(0 0 0 / 0.12);
+  --font-main: "Moscow Sans", Inter, "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --container: 1120px;
+  color-scheme: light;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: #f1f1f1;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background: #f1f1f1;
+  color: var(--color-text);
+  font-family: var(--font-main);
+  line-height: 1.4;
+  text-rendering: geometricprecision;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+}
+
+strong {
+  font-weight: 800;
+}
+
+.landing {
+  width: 100%;
+  overflow: hidden;
+  background: var(--color-page);
+}
+
+.section__inner {
+  position: relative;
+  z-index: 1;
+  width: min(calc(100% - 40px), var(--container));
+  margin-inline: auto;
+}
+
+.section-title {
+  margin: 0;
+  color: var(--color-text);
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: 0;
+}
+
+.section-title span {
+  color: var(--color-green-dark);
+}
+
+.image-crop {
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.image-crop img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
