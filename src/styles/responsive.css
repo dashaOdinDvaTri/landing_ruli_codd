@@ -356,6 +356,30 @@
   }
 }
 
+/*
+ * Android devices commonly expose a 360 px CSS viewport. Keep the second
+ * benefit in the left column at these intermediate widths so its text does
+ * not cross the phone while preserving the dedicated 320 px composition.
+ */
+@media (min-width: 340px) and (max-width: 374px) {
+  .hero-benefit:nth-child(2) {
+    top: 74px;
+    left: 0;
+    width: 175px;
+    height: 67px;
+  }
+
+  .hero-benefit:nth-child(2) span {
+    top: 0;
+    left: clamp(32px, calc(66.6667vw - 208px), 42px);
+    width: 133px;
+  }
+
+  .hero-benefit:nth-child(2)::before {
+    width: 166px;
+  }
+}
+
 @media (min-width: 375px) and (max-width: 389px) {
   .hero,
   .hero__inner {
