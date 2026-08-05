@@ -9,6 +9,9 @@
     />
     <link rel="icon" href="/assets/figma/logo-glyph.svg" type="image/svg+xml" />
     <title>ЦОДД.Гараж — мобильное приложение</title>
+    <script>
+      document.documentElement.classList.add("js", "is-intro-active");
+    </script>
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
       (function(m,e,t,r,i,k,a){
@@ -24,6 +27,18 @@
   </head>
   <body>
     <noscript><div><img src="https://mc.yandex.ru/watch/110992909" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <div class="intro js-intro" role="status" aria-label="Открываем ЦОДД.Гараж">
+      <video
+        class="intro__video js-intro-video"
+        muted
+        playsinline
+        preload="auto"
+        aria-hidden="true"
+      >
+        <source src="/assets/animations/intro.mp4" type="video/mp4" />
+      </video>
+    </div>
+
     <main class="landing">
       <section class="hero" aria-labelledby="hero-title">
         <div class="section__inner hero__inner">
