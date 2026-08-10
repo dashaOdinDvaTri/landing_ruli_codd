@@ -77,7 +77,18 @@
             </ul>
           </div>
 
-          <img class="hero__phone" src="/assets/figma/hero-phone.png" alt="" />
+          <picture class="hero__phone">
+            <source
+              media="(prefers-reduced-motion: reduce)"
+              srcset="/assets/figma/hero-phone.png"
+            />
+            <img
+              src="/assets/figma/hero-phone-animation.gif"
+              alt=""
+              width="397"
+              height="799"
+            />
+          </picture>
 
           <div class="store-links hero__stores" aria-label="Скачать приложение">
             <a class="store-link js-store-link" data-placement="hero" data-store="rustore" href="https://www.rustore.ru/" target="_blank" rel="noopener">
